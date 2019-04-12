@@ -3,27 +3,29 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="page-header">
-    <div class="page-header__logo logo">
-      <a class="logo__link" href="index.html">
-        <img class="logo__icon" src="http://placehold.it/33x38" width="33" height="38"
-          alt="Логотип фитнес еды для котиков">
-        <img class="logo__title" src="http://placehold.it/101x18" width="101" height="18"
+    <div class="page-header__logo">
+      <a class="page-header__logo-link" href="index.html">
+        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="38"
           alt="Логотип интернет-магазина Кэт энерджи">
       </a>
     </div>
     <nav class="main-menu">
+      <button class="main-menu__toggle" type="button">Открыть меню</button>
       <ul class="main-menu__list">
         <li class="main-menu__item">
-          <a class="main-menu__link" href="index.html">Главная</a>
+          <a class="main-menu__link" href="index.html"><span
+              class="main-menu__link-wrapper main-menu__link-wrapper--current">Главная</span></a>
         </li>
         <li class="main-menu__item">
-          <a class="main-menu__link" href="catalog.html">Каталог продукции</a>
+          <a class="main-menu__link" href="catalog.html"><span class="main-menu__link-wrapper">Каталог
+              продукции</span></a>
         </li>
         <li class="main-menu__item">
-          <a class="main-menu__link" href="form.html">Подбор программы</a>
+          <a class="main-menu__link" href="form.html"><span class="main-menu__link-wrapper">Подбор программы</span></a>
         </li>
       </ul>
     </nav>
@@ -31,11 +33,15 @@
   <main class="page-main">
     <h1 class="visually-hidden">Главная страница интернет-магазина Кэт энерджи</h1>
     <div class="first-screen">
-      <p class="first-screen__title">Функциональное питание для котов</p>
-      <p class="first-screen__subtitle">Занялся собой? Займись котом!</p>
-      <a class="page-main__button button" href="form.html">Подобрать программу</a>
+      <div class="first-screen__wrapper">
+        <b class="first-screen__title">Функциональное питание для котов</b>
+        <b class="first-screen__subtitle">Занялся собой? Займись котом!</b>
+      </div>
+      <div class="first-screen__container">
+        <a class="first-screen__button button button--first-screen" href="form.html">Подобрать программу</a>
+      </div>
     </div>
-    <section class="categories">
+    <section class="categories ">
       <h2 class="categories__title categories__title--slimming">Похудение</h2>
       <p class="categories__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
         Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
@@ -66,32 +72,35 @@
     </section>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__logo logo">
-      <a class="logo__link" href="index.html">
-        <img class="logo__title" src="http://placehold.it/128x24" width="128" height="24"
+    <div class="page-footer__logo">
+      <a class="page-footer__logo-link" href="index.html">
+        <img class="page-footer__logo-title" src="img/logo-footer.svg" width="128" height="24"
           alt="Логотип интернет-магазина Кэт энерджи">
       </a>
     </div>
-    <section class="page-footer_social social-network">
+    <section class="page-footer__social">
       <h2 class="visually-hidden">Мы в социальных сетях</h2>
-      <ul class="social-network__list">
-        <li class="social-network__item">
-          <a class="social-network__link social-network__link--vk" href="https://vk.com/htmlacademy">Наша страница в
+      <ul class="page-footer__social-list">
+        <li class="page-footer__social-item">
+          <a class="page-footer__social-link page-footer__social-link--vk" href="https://vk.com/htmlacademy">Наша
+            страница в
             Вконтакте</a>
         </li>
-        <li class="social-network__item">
-          <a class="social-network__link social-network__link--instagram"
+        <li class="page-footer__social-item">
+          <a class="page-footer__social-link page-footer__social-link--instagram"
             href="https://www.instagram.com/htmlacademy/">Наша страница в Инстаграм</a>
         </li>
-        <li class="social-network__item">
-          <a class="social-network__link social-network__link--facebook"
+        <li class="page-footer__social-item">
+          <a class="page-footer__social-link page-footer__social-link--facebook"
             href="https://www.facebook.com/htmlacademy">Наша страничка в Фейсбук</a>
         </li>
       </ul>
     </section>
-    <div class="page-footer__htmlacademy htmlacademy">
-      <a class="htmlacademy__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-      <a class="htmlacademy__link htmlacademy__link--logo" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+    <div class="page-footer__htmlacademy">
+      <a class="page-footer__htmlacademy-link" href="https://htmlacademy.ru/intensive/adaptive"
+        title="Профессиональный онлайн‑курс HTML и CSS, уровень 2">HTML Academy</a>
+      <a class="page-footer__htmlacademy-logo" href="https://htmlacademy.ru/intensive/adaptive"><img
+          src="img/htmlacademy.svg" width="27" height="34" alt="Профессиональный онлайн‑курс HTML и CSS, уровень 2"></a>
     </div>
   </footer>
 </body>
