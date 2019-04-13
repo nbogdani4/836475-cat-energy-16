@@ -1,0 +1,58 @@
+.first-screen__wrapper {
+  min-height: 305px;
+  margin-bottom: 135px;
+  .padding-left-right;
+
+  color: #ffffff;
+
+  background-color: #65a93c;
+  background-image: url("../../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.first-screen__title {
+  display: block;
+  margin: 0;
+  padding-top: 27px;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  font-family: @oswald;
+  text-align: center;
+}
+
+.first-screen__subtitle {
+  display: block;
+  margin: 0;
+  padding-top: 25px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  font-family: @oswald;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.first-screen__container {
+  position: relative;
+
+  .padding-left-right;
+
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -271px;
+    left: 50%;
+
+    width: 280px;
+    height: 271px;
+    margin-left: -140px;
+
+    background-image: url("../../img/index-can-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}

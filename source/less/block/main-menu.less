@@ -1,0 +1,47 @@
+.main-menu__list {
+  .list-reset;
+}
+
+.main-menu__item {
+  text-align: center;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.main-menu__link {
+  display: block;
+  padding: 23px 0;
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  font-family: @oswald;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.6;
+
+    .main-menu__link-wrapper--current {
+      border-bottom: none;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    .main-menu__link-wrapper--current {
+      border-bottom: none;
+    }
+  }
+}
+
+.main-menu__link-wrapper--current {
+  border-bottom: 2px solid #68b738;
+}
+
+.main-menu__toggle {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
