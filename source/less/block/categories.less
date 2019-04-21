@@ -1,18 +1,9 @@
 .categories {
   position: relative;
-
-  // margin: 20px;
-  // padding: 20px;
-
-  margin-top: 22px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-bottom: 20px;
   padding: 20px;
-
-
   line-height: 18px;
   color: #444444;
-
   background-color: #f2f2f2;
 
   &::after {
@@ -20,10 +11,8 @@
     position: absolute;
     bottom: 57px;
     left: 20px;
-
     width: calc(100% - 40px);
     height: 1px;
-
     background-color: #d9d9d9;
   }
 }
@@ -32,7 +21,7 @@
   margin: 0;
   padding-top: 10px;
   padding-bottom: 28px;
-
+  padding-left: 12px;
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
@@ -58,5 +47,11 @@
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .categories {
+    width: 570px;
   }
 }

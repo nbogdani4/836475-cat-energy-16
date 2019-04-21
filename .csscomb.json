@@ -23,16 +23,13 @@
     "unitless-zero": true,
     "vendor-prefix-align": true,
   "sort-order": [
-    [
       "content",
       "position",
       "top",
       "right",
       "bottom",
       "left",
-      "z-index"
-    ],
-    [
+      "z-index",
       "display",
       "-webkit-box",
       "-webkit-flex",
@@ -111,9 +108,7 @@
       "overflow-x",
       "-ms-overflow-y",
       "overflow-y",
-      "-webkit-overflow-scrolling"
-    ],
-    [
+      "-webkit-overflow-scrolling",
       "list-style",
       "list-style-position",
       "list-style-type",
@@ -217,9 +212,7 @@
       "text-shadow",
       "page-break-after",
       "page-break-before",
-      "page-break-inside"
-    ],
-    [
+      "page-break-inside",
       "background",
       "background-color",
       "background-image",
@@ -342,9 +335,7 @@
       "cursor",
       "opacity",
       "-webkit-filter",
-      "filter"
-    ],
-    [
+      "filter",
       "-webkit-transition",
       "-moz-transition",
       "-ms-transition",
@@ -409,9 +400,7 @@
       "-moz-animation-direction",
       "-ms-animation-direction",
       "-o-animation-direction",
-      "animation-direction"
-    ],
-    [
+      "animation-direction",
       "quotes",
       "counter-reset",
       "counter-increment",
@@ -431,6 +420,6 @@
       "-webkit-clip-path",
       "clip-path",
       "zoom"
-    ]
+    
   ]
 }

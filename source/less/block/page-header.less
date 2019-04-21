@@ -1,6 +1,12 @@
-.page-header__logo {
-  padding: 11px 20px 13px;
+.page-header {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  margin: 0 auto;
+}
 
+.page-header__logo {
+  padding: 13px 20px 11px 20px;
   border-bottom: 1px solid #e6e6e6;
 }
 
@@ -11,5 +17,28 @@
 
   &:active {
     opacity: 0.6;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    flex-direction: row;
+    justify-content: space-between;
+    width: @tablet-width;
+    padding: 19px 30px 17px 30px;
+  }
+
+  .page-header__logo {
+    border-bottom: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    width: 1440px;
+    min-height: 168px;
+    padding-top: 51px;
+    padding-right: 110px;
+    padding-left: 110px;
   }
 }

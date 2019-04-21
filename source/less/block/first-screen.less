@@ -1,10 +1,29 @@
-.first-screen__wrapper {
-  min-height: 305px;
-  margin-bottom: 135px;
-  .padding-left-right;
+.first-screen {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 320px;
+  min-height: 480px;
+  margin: 0 auto;
 
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 43px;
+    left: 50%;
+    width: 280px;
+    height: 271px;
+    margin-left: -140px;
+    background-image: url("../../img/index-can-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
+
+.first-screen__header {
+  padding: 27px 20px 167px 20px;
   color: #ffffff;
-
   background-color: #65a93c;
   background-image: url("../../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -14,7 +33,7 @@
 .first-screen__title {
   display: block;
   margin: 0;
-  padding-top: 27px;
+  margin-bottom: 25px;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
@@ -25,8 +44,6 @@
 .first-screen__subtitle {
   display: block;
   margin: 0;
-  padding-top: 25px;
-
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
@@ -35,24 +52,95 @@
   text-transform: uppercase;
 }
 
-.first-screen__container {
-  position: relative;
+.first-screen__body {
+  padding-right: 20px;
+  padding-left: 20px;
+}
 
-  .padding-left-right;
+@media (min-width: @tablet-width) {
+  .first-screen {
+    justify-content: flex-start;
+    // min-height: 815px;
+    width: @tablet-width;
 
+    &::before {
+      bottom: -29px;
+      left: 169px;
+      width: 709px;
+      height: 609px;
+      background-image: url("../../img/index-can-tablet@1x.jpg");
+    }
+  }
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: -271px;
-    left: 50%;
+  .first-screen__header {
+    padding-top: 34px;
+    padding-right: 120px;
+    padding-bottom: 48px;
+    padding-left: 120px;
+    color: #111111;
+    background: none;
+  }
 
-    width: 280px;
-    height: 271px;
-    margin-left: -140px;
+  .first-screen__title {
+    margin-bottom: 41px;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+  }
 
-    background-image: url("../../img/index-can-mobile@1x.png");
+  .first-screen__subtitle {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+  }
+
+  .first-screen__body {
+    padding-right: 30px;
+    padding-bottom: 500px;
+    padding-left: 120px;
+  }
+
+  .first-screen__button {
+    z-index: 0;
+    display: inline-block;
+    padding: 16px 27px;
+    font-size: 20px;
+    line-height: 20px;
+    vertical-align: top;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .first-screen {
+    z-index: -1;
+    width: 1440px;
+    margin-top: -168px;
+    background-color: #65a93c;
+    background-image: url("../../img/index-background-desktop@1x.jpg");
     background-repeat: no-repeat;
-    background-position: 0 0;
+    background-position: 100% 0;
+
+    &::before {
+      top: 142px;
+      left: 700px;
+      background-image: url("../../img/index-can-desktop@1x.png");
+    }
+  }
+
+  .first-screen__header {
+    width: 50%;
+    padding-top: 222px;
+    padding-right: 70px;
+    padding-bottom: 53px;
+    padding-left: 190px;
+    background-color: #ffffff;
+  }
+
+  .first-screen__body {
+    width: 50%;
+    padding-right: 70px;
+    padding-bottom: 188px;
+    padding-left: 190px;
+    background-color: #ffffff;
   }
 }

@@ -1,16 +1,19 @@
 .page-footer {
-  .padding-left-right;
-
-
+  width: 320px;
+  margin: 0 auto;
+  padding-right: 20px;
+  padding-left: 20px;
   background-color: #f2f2f2;
+}
+
+.page-footer > * {
+  outline: 1px dotted green;
 }
 
 .page-footer__logo {
   padding-top: 39px;
   padding-bottom: 29px;
-
   text-align: center;
-
   border-bottom: 1px solid #d9d9d9;
 }
 
@@ -25,8 +28,8 @@
 }
 
 .page-footer__social {
-  border-bottom: 1px solid #d9d9d9;
   min-height: 63px; //временно
+  border-bottom: 1px solid #d9d9d9;
 }
 
 .page-footer__social-list {
@@ -49,5 +52,23 @@
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    display: flex;
+    justify-content: space-between;
+    width: @tablet-width;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+    width: 1440px;
+    padding-right: 110px;
+    padding-left: 110px;
   }
 }
