@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -17,15 +18,15 @@
       <button class="main-menu__toggle" type="button">Открыть меню</button>
       <ul class="main-menu__list">
         <li class="main-menu__item">
-          <a class="main-menu__link" href="index.html"><span
-              class="main-menu__link-wrapper main-menu__link-wrapper--current">Главная</span></a>
+          <a class="main-menu__link main-menu__link--index" href="index.html"><span
+              class="main-menu__link-wrapper main-menu__link-wrapper--current main-menu__link-wrapper--index">Главная</span></a>
         </li>
         <li class="main-menu__item">
-          <a class="main-menu__link" href="catalog.html"><span class="main-menu__link-wrapper">Каталог
+          <a class="main-menu__link main-menu__link--index" href="catalog.html"><span class="main-menu__link-wrapper">Каталог
               продукции</span></a>
         </li>
         <li class="main-menu__item">
-          <a class="main-menu__link" href="form.html"><span class="main-menu__link-wrapper">Подбор программы</span></a>
+          <a class="main-menu__link main-menu__link--index" href="form.html"><span class="main-menu__link-wrapper">Подбор программы</span></a>
         </li>
       </ul>
     </nav>
@@ -33,26 +34,28 @@
   <main class="page-main">
     <h1 class="visually-hidden">Главная страница интернет-магазина Кэт энерджи</h1>
     <div class="first-screen">
-      <div class="first-screen__wrapper">
+      <div class="first-screen__header">
         <b class="first-screen__title">Функциональное питание для котов</b>
         <b class="first-screen__subtitle">Занялся собой? Займись котом!</b>
       </div>
-      <div class="first-screen__container">
-        <a class="first-screen__button button button--first-screen" href="form.html">Подобрать программу</a>
+      <div class="first-screen__body">
+        <a class="first-screen__button button" href="form.html">Подобрать программу</a>
       </div>
     </div>
-    <section class="categories ">
-      <h2 class="categories__title categories__title--slimming">Похудение</h2>
-      <p class="categories__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
-        Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-      <a class="categories__link" href="#">Каталог Slim</a>
-    </section>
-    <section class="categories">
-      <h2 class="categories__title categories__title--weight-gain">Набор массы</h2>
-      <p class="categories__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
-        поможет вашему коту нарастить необходимые мышцы!</p>
-      <a class="categories__link" href="#">Каталог pro</a>
-    </section>
+    <div class="page-main__categories-wrapper">
+      <section class="categories ">
+        <h2 class="categories__title categories__title--slimming">Похудение</h2>
+        <p class="categories__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
+          Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+        <a class="categories__link" href="#">Каталог Slim</a>
+      </section>
+      <section class="categories">
+        <h2 class="categories__title categories__title--weight-gain">Набор массы</h2>
+        <p class="categories__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
+          поможет вашему коту нарастить необходимые мышцы!</p>
+        <a class="categories__link" href="#">Каталог pro</a>
+      </section>
+    </div>
     <section class="how-work">
       <h2 class="how-work__title">Как это работает</h2>
       <ul class="how-work__list">
