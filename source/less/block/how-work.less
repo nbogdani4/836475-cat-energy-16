@@ -1,16 +1,15 @@
 .how-work {
   width: 320px;
-  margin: 20px auto;
+  margin: 0 auto;
   padding-right: 20px;
   padding-left: 20px;
   line-height: 18px;
   color: #444444;
-  outline: 1px solid red;
 }
 
 .how-work__title {
   margin: 0;
-  padding-bottom: 27px;
+  padding-bottom: 30px;
   font-weight: 400;
   font-size: 36px;
   line-height: 60px;
@@ -26,11 +25,70 @@
   position: relative;
   margin-bottom: 26px;
   padding-left: 80px;
-  outline: 1px dotted blue;
+}
+
+.how-work__item--nutrients::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  background-color: #68b738;
+  background-image: url("../img/advantage-leaf@1x.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50px;
+}
+
+.how-work__item--powder::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  background-color: #68b738;
+  background-image: url("../img/advantage-powder@1x.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50px;
+}
+
+.how-work__item--food::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  background-color: #68b738;
+  background-image: url("../img/advantage-dining@1x.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50px;
+}
+
+.how-work__item--period::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  background-color: #68b738;
+  background-image: url("../img/advantage-clock@1x.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50px;
 }
 
 .how-work__description {
   margin: 0;
+}
+
+.how-work__description br {
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
@@ -38,6 +96,11 @@
     width: @tablet-width;
     padding-right: 30px;
     padding-left: 30px;
+  }
+
+  .how-work__title {
+    padding-bottom: 74px;
+    font-size: 60px;
   }
 
   .how-work__list {
@@ -49,11 +112,65 @@
 
   .how-work__item {
     width: 324px;
+    min-height: 232px;
+    padding-top: 110px;
     padding-left: 0;
+
+    &:nth-child(1),
+    &:nth-child(2) {
+      margin-bottom: 85px;
+    }
+
+    &::after {
+      width: 80px;
+      height: 80px;
+      background-size: 50px 50px;
+    }
+  }
+
+  .how-work__item--nutrients::before,
+  .how-work__item--powder::before,
+  .how-work__item--food::before,
+  .how-work__item--period::before {
+    position: absolute;
+    top: -41px;
+    z-index: -1;
+    width: 81px;
+    height: 228px;
+    font-size: 281px;
+    line-height: 281px;
+    font-family: @oswald;
+    color: #f2f2f2;
+  }
+
+  .how-work__item--nutrients::before {
+    content: "1";
+    left: 118px;
+  }
+
+  .how-work__item--powder::before {
+    content: "2";
+    left: 111px;
+  }
+
+  .how-work__item--food::before {
+    content: "3";
+    left: 113px;
+  }
+
+  .how-work__item--period::before {
+    content: "4";
+    left: 113px;
   }
 
   .how-work__description {
-    width: 210px;
+    padding-right: 75px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .how-work__description br {
+    display: unset;
   }
 }
 
@@ -67,5 +184,9 @@
   .how-work__item {
     width: 245px;
     padding-left: 0;
+  }
+
+  .how-work__description {
+    padding-right: 0;
   }
 }

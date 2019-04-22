@@ -5,7 +5,7 @@
   justify-content: space-between;
   width: 320px;
   min-height: 480px;
-  margin: 0 auto;
+  margin: 0 auto 22px;
 
   &::before {
     content: "";
@@ -60,8 +60,8 @@
 @media (min-width: @tablet-width) {
   .first-screen {
     justify-content: flex-start;
-    // min-height: 815px;
     width: @tablet-width;
+    margin-bottom: 29px;
 
     &::before {
       bottom: -29px;
@@ -115,6 +115,7 @@
     z-index: -1;
     width: 1440px;
     margin-top: -168px;
+    margin-bottom: 80px;
     background-color: #65a93c;
     background-image: url("../img/index-background-desktop@1x.jpg");
     background-repeat: no-repeat;
@@ -129,6 +130,7 @@
 
   .first-screen__header {
     width: 50%;
+    margin-left: -1px;
     padding-top: 222px;
     padding-right: 70px;
     padding-bottom: 53px;
@@ -138,6 +140,7 @@
 
   .first-screen__body {
     width: 50%;
+    margin-left: -1px;
     padding-right: 70px;
     padding-bottom: 188px;
     padding-left: 190px;

@@ -6,12 +6,8 @@
   background-color: #f2f2f2;
 }
 
-.page-footer > * {
-  outline: 1px dotted green;
-}
-
 .page-footer__logo {
-  padding-top: 39px;
+  padding-top: 38px;
   padding-bottom: 29px;
   text-align: center;
   border-bottom: 1px solid #d9d9d9;
@@ -28,20 +24,30 @@
 }
 
 .page-footer__social {
-  min-height: 63px; //временно
+  padding-top: 22px;
+  padding-bottom: 18px;
   border-bottom: 1px solid #d9d9d9;
 }
 
 .page-footer__social-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
   .list-reset;
 }
+
+.page-footer__social-item:not(:last-child) {
+  margin-right: 37px;
+}
+
 
 .page-footer__htmlacademy {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 23px;
-  padding-bottom: 25px;
+  padding-top: 24px;
+  padding-bottom: 16px;
 }
 
 .page-footer__htmlacademy-link {
@@ -60,6 +66,7 @@
     display: flex;
     justify-content: space-between;
     width: @tablet-width;
+    min-height: 150px; //Временно
     padding-right: 30px;
     padding-left: 30px;
   }
