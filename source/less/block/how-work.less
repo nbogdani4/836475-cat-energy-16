@@ -27,48 +27,9 @@
   padding-left: 80px;
 }
 
-.how-work__item--nutrients::after {
-  content: "";
-  position: absolute;
-  top: -2px;
-  left: 0;
-  width: 60px;
-  height: 60px;
-  background-color: #68b738;
-  background-image: url("../img/advantage-leaf@1x.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 50px;
-}
-
-.how-work__item--powder::after {
-  content: "";
-  position: absolute;
-  top: -2px;
-  left: 0;
-  width: 60px;
-  height: 60px;
-  background-color: #68b738;
-  background-image: url("../img/advantage-powder@1x.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 50px;
-}
-
-.how-work__item--food::after {
-  content: "";
-  position: absolute;
-  top: -2px;
-  left: 0;
-  width: 60px;
-  height: 60px;
-  background-color: #68b738;
-  background-image: url("../img/advantage-dining@1x.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 50px;
-}
-
+.how-work__item--nutrients::after,
+.how-work__item--powder::after,
+.how-work__item--food::after,
 .how-work__item--period::after {
   content: "";
   position: absolute;
@@ -77,14 +38,49 @@
   width: 60px;
   height: 60px;
   background-color: #68b738;
-  background-image: url("../img/advantage-clock@1x.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 50px;
 }
 
+.how-work__item--nutrients::after {
+  background-image: url("../img/advantage-leaf@1x.png");
+}
+
+.how-work__item--powder::after {
+  background-image: url("../img/advantage-powder@1x.png");
+}
+
+.how-work__item--food::after {
+  background-image: url("../img/advantage-dining@1x.png");
+}
+
+.how-work__item--period::after {
+  background-image: url("../img/advantage-clock@1x.png");
+}
+
+@media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+  .how-work__item--nutrients::after {
+    background-image: url("../img/advantage-leaf@2x.png");
+  }
+
+  .how-work__item--powder::after {
+    background-image: url("../img/advantage-powder@2x.png");
+  }
+
+  .how-work__item--food::after {
+    background-image: url("../img/advantage-dining@2x.png");
+  }
+
+  .how-work__item--period::after {
+    background-image: url("../img/advantage-clock@2x.png");
+  }
+}
+
+
 .how-work__description {
   margin: 0;
+  font-family: @arial;
 }
 
 .how-work__description br {

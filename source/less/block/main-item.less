@@ -15,7 +15,7 @@
 .main-item__item {
   display: flex;
   flex-wrap: wrap;
-  padding: 1px 20px 24px 20px;
+  padding: 0 20px 25px 20px;
   border-bottom: 1px solid #ededed;
 }
 
@@ -56,6 +56,7 @@
   margin: 0;
   font-size: 12px;
   line-height: 16px;
+  font-family: @arial;
 }
 
 .main-item__item--show-more {
@@ -99,6 +100,7 @@
 .main-item__subparagraph {
   margin: 0;
   margin-bottom: 21px;
+  font-family: @arial;
 }
 
 @media (min-width: @tablet-width) {
@@ -115,9 +117,10 @@
   }
 
   .main-item__item {
+    position: relative;
     flex-direction: column;
     width: 323px;
-    margin-top: 140px;
+    margin-top: 141px;
     padding: 142px 36px 39px 38px;
     background-color: #f2f2f2;
   }
@@ -127,8 +130,17 @@
   }
 
   .main-item__img-link {
-    display: none; //Временно
     width: unset;
+  }
+
+  .main-item__img {
+    position: absolute;
+    top: -48px;
+    left: 0;
+  }
+
+  .main-item__item:nth-child(2n) .main-item__img {
+    top: -82px;
   }
 
   .main-item__description {
