@@ -125,6 +125,7 @@
       "font-size",
       "line-height",
       "font-family",
+      "font-display",
       "vertical-align",
       "text-align",
       "direction",
@@ -420,6 +421,5 @@
       "-webkit-clip-path",
       "clip-path",
       "zoom"
-    
   ]
 }
