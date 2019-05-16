@@ -4,9 +4,16 @@
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <svg style="display:none">
+    <symbol id="htmlacademy-logo" viewBox="0 0 374 474">
+      <path d="M189 0h-2L0 20v343l187 111 187-111h1V20L190 1zm158 168L187 74v-1l-1 1-1-1v2L27 169V44l160-17 160 17v125zM186 94l160 93-62 37-99-59v20l82 49-12 7-70-42v20l53 32-11 7-42-25v20l26 15-25 15-158-94 158-95zM27 210l158 94v15L75 253v20l111 67v15L75 289v20l111 67h1l113-68v-72l47-28v139l-160 95-160-95V210z" />
+    </symbol>
+  </svg>
   <header class="page-header">
     <div class="page-header__logo">
       <a class="page-header__logo-link" href="index.html">
@@ -46,6 +53,9 @@
         <li class="main-item__item">
           <a class="main-item__img-link" href="item.html">
             <picture>
+              <source type="image/webp" media="(min-width: 1300px)" srcset="img/chicken-small-desktop@1x.webp 1x, img/chicken-small-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.webp 1x, img/chicken-small-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/chicken-small-mobile@1x.webp 1x, img/chicken-small-mobile@2x.webp 2x">
               <source media="(min-width: 1300px)" srcset="img/chicken-small-desktop@1x.png 1x, img/chicken-small-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.png 1x, img/chicken-small-tablet@2x.png 2x">
               <img class="main-item__img" src="img/chicken-small-mobile@1x.jpg" srcset="img/chicken-small-mobile@2x.jpg 2x" alt="Cat Energy  PRO 500 г">
@@ -73,6 +83,9 @@
         <li class="main-item__item">
           <a class="main-item__img-link" href="item.html">
             <picture>
+              <source type="image/webp" media="(min-width: 1300px)" srcset="img/chicken-big-desktop@1x.webp 1x, img/chicken-big-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/chicken-big-tablet@1x.webp 1x, img/chicken-big-tablet@2x.webp 2x">
+              <source type="image/webp" src="img/chicken-big-mobile@1x.webp" srcset="img/chicken-big-mobile@2x.webp 2x">
               <source media="(min-width: 1300px)" srcset="img/chicken-big-desktop@1x.png 1x, img/chicken-big-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/chicken-big-tablet@1x.png 1x, img/chicken-big-tablet@2x.png 2x">
               <img class="main-item__img" src="img/chicken-big-mobile@1x.jpg" srcset="img/chicken-big-mobile@2x.jpg 2x" alt="Cat Energy PRO 1000 г">
@@ -100,6 +113,9 @@
         <li class="main-item__item">
           <a class="main-item__img-link" href="item.html">
             <picture>
+              <source type="image/webp" media="(min-width: 1300px)" srcset="img/fish-small-desktop@1x.webp 1x, img/fish-small-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/fish-small-tablet@1x.webp 1x, img/fish-small-tablet@2x.webp 2x">
+              <source type="image/webp" src="img/fish-small-mobile@1x.webp" srcset="img/fish-small-mobile@2x.webp 2x">
               <source media="(min-width: 1300px)" srcset="img/fish-small-desktop@1x.png 1x, img/fish-small-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/fish-small-tablet@1x.png 1x, img/fish-small-tablet@2x.png 2x">
               <img class="main-item__img" src="img/fish-small-mobile@1x.jpg" srcset="img/fish-small-mobile@2x.jpg 2x" alt="Cat Energy PRO 500 г">
@@ -127,6 +143,9 @@
         <li class="main-item__item">
           <a class="main-item__img-link" href="item.html">
             <picture>
+              <source type="image/webp" media="(min-width: 1300px)" srcset="img/fish-big-desktop@1x.webp 1x, img/fish-big-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/fish-big-tablet@1x.webp 1x, img/fish-big-tablet@2x.webp 2x">
+              <source type="image/webp" src="img/fish-big-mobile@1x.webp" srcset="img/fish-big-mobile@2x.webp 2x" alt="Cat Energy PRO 1000 г">
               <source media="(min-width: 1300px)" srcset="img/fish-big-desktop@1x.png 1x, img/fish-big-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/fish-big-tablet@1x.png 1x, img/fish-big-tablet@2x.png 2x">
               <img class="main-item__img" src="img/fish-big-mobile@1x.jpg" srcset="img/fish-big-mobile@2x.jpg 2x" alt="Cat Energy PRO 1000 г">
@@ -154,11 +173,13 @@
         <li class="main-item__item">
           <a class="main-item__img-link" href="item.html">
             <picture>
+              <source type="image/webp" media="(min-width: 1300px)" srcset="img/buckwheat-small-desktop@1x.webp 1x, img/buckwheat-small-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/buckwheat-small-tablet@1x.webp 1x, img/buckwheat-small-tablet@2x.webp 2x">
+              <source type="image/webp" src="img/buckwheat-small-mobile@1x.webp" srcset="img/buckwheat-small-mobile@2x.webp 2x">
               <source media="(min-width: 1300px)" srcset="img/buckwheat-small-desktop@1x.png 1x, img/buckwheat-small-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/buckwheat-small-tablet@1x.png 1x, img/buckwheat-small-tablet@2x.png 2x">
               <img class="main-item__img" src="img/buckwheat-small-mobile@1x.jpg" srcset="img/buckwheat-small-mobile@2x.jpg 2x" alt="Cat Energy Slim 500 г">
             </picture>
-
           </a>
           <div class="main-item__description">
             <a class="main-item__link" href="item.html">
@@ -182,6 +203,9 @@
         <li class="main-item__item">
           <a class="main-item__img-link" href="item.html">
             <picture>
+              <source type="image/webp" media="(min-width: 1300px)" srcset="img/buckwheat-big-desktop@1x.webp 1x, img/buckwheat-big-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/buckwheat-big-tablet@1x.webp 1x, img/buckwheat-big-tablet@2x.webp 2x">
+              <source type="image/webp" src="img/buckwheat-big-mobile@1x.webp" srcset="img/buckwheat-big-mobile@2x.webp 2x">
               <source media="(min-width: 1300px)" srcset="img/buckwheat-big-desktop@1x.png 1x, img/buckwheat-big-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/buckwheat-big-tablet@1x.png 1x, img/buckwheat-big-tablet@2x.png 2x">
               <img class="main-item__img" src="img/buckwheat-big-mobile@1x.jpg" srcset="img/buckwheat-big-mobile@2x.jpg 2x" alt="Cat Energy Slim 1000 г">
@@ -209,6 +233,9 @@
         <li class="main-item__item">
           <a class="main-item__img-link" href="item.html">
             <picture>
+              <source type="image/webp" media="(min-width: 1300px)" srcset="img/rice-small-desktop@1x.webp 1x, img/rice-small-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/rice-small-tablet@1x.webp 1x, img/rice-small-tablet@2x.webp 2x">
+              <source type="image/webp" src="img/rice-small-mobile@1x.webp" srcset="img/rice-small-mobile@2x.webp 2x">
               <source media="(min-width: 1300px)" srcset="img/rice-small-desktop@1x.png 1x, img/rice-small-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/rice-small-tablet@1x.png 1x, img/rice-small-tablet@2x.png 2x">
               <img class="main-item__img" src="img/rice-small-mobile@1x.jpg" srcset="img/rice-small-mobile@2x.jpg 2x" alt="Cat Energy Slim 500 г">
@@ -273,7 +300,9 @@
     <div class="page-footer__htmlacademy">
       <a class="page-footer__htmlacademy-link" href="https://htmlacademy.ru/intensive/adaptive" title="Профессиональный онлайн‑курс HTML и CSS, уровень 2">HTML Academy</a>
       <a class="page-footer__htmlacademy-logo" href="https://htmlacademy.ru/intensive/adaptive">
-        <img src="img/htmlacademy.svg" width="27" height="34" alt="Профессиональный онлайн‑курс HTML и CSS, уровень 2">
+        <svg width="27" height="34">
+          <use xlink:href="#htmlacademy-logo"></use>
+        </svg>
       </a>
     </div>
   </footer>

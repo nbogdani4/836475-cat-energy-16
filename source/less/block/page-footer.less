@@ -25,7 +25,8 @@
 
 .page-footer__social {
   padding-top: 22px;
-  padding-bottom: 18px;
+  padding-right: 11px;
+  padding-bottom: 17px;
   border-bottom: 1px solid #d9d9d9;
 }
 
@@ -33,33 +34,50 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
 
   .list-reset;
 }
 
 .page-footer__social-item:not(:last-child) {
-  margin-right: 37px;
+  margin-right: 38px;
 }
 
-
 .page-footer__htmlacademy {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 24px;
-  padding-bottom: 16px;
+  padding-top: 22px;
+  padding-bottom: 22px;
 }
 
 .page-footer__htmlacademy-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-size: 16px;
   line-height: 16px;
   font-family: @arial;
   color: #444444;
   text-decoration: none;
+}
 
-  &:active {
-    opacity: 0.3;
-  }
+.page-footer__htmlacademy-logo,
+.page-footer__social-link--vk svg,
+.page-footer__social-link--instagram svg,
+.page-footer__social-link--facebook svg {
+  fill: #666666;
+}
+
+.page-footer__htmlacademy-link:hover .page-footer__htmlacademy-logo,
+.page-footer__social-link--vk:hover svg,
+.page-footer__social-link--instagram:hover svg,
+.page-footer__social-link--facebook:hover svg {
+  fill: green;
+}
+
+.page-footer__htmlacademy-link:active,
+.page-footer__social-link--vk:active svg,
+.page-footer__social-link--instagram:active svg,
+.page-footer__social-link--facebook:active svg {
+  opacity: 0.3;
 }
 
 @media (min-width: @tablet-width) {
@@ -67,14 +85,52 @@
     display: flex;
     justify-content: space-between;
     width: @tablet-width;
-    min-height: 150px; //Временно
     padding-right: 30px;
+    padding-bottom: 35px;
     padding-left: 30px;
   }
 
-  .page-footer__logo,
+  .page-footer__logo {
+    padding-top: 64px;
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+
   .page-footer__social {
+    padding: 60px 0 0 18px;
     border-bottom: none;
+  }
+
+  .page-footer__social-item:not(:last-child) {
+    margin-right: 28px;
+  }
+
+  .page-footer__social-link--vk svg {
+    width: 30px;
+    height: 16px;
+  }
+
+  .page-footer__social-link--instagram svg {
+    width: 23px;
+    height: 23px;
+  }
+
+  .page-footer__social-link--facebook svg {
+    width: 14px;
+    height: 28px;
+  }
+
+  .page-footer__htmlacademy {
+    padding-top: 58px;
+    padding-bottom: 0;
+  }
+
+  .page-footer__htmlacademy-link {
+    justify-content: flex-end;
+  }
+
+  .page-footer__htmlacademy-title {
+    margin-right: 21px;
   }
 }
 
@@ -82,6 +138,7 @@
   .page-footer {
     width: 1440px;
     padding-right: 110px;
+    padding-bottom: 56px;
     padding-left: 110px;
   }
 }
