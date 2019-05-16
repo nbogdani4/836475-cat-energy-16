@@ -9,11 +9,6 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <svg style="display:none">
-    <symbol id="htmlacademy-logo" viewBox="0 0 374 474">
-      <path d="M189 0h-2L0 20v343l187 111 187-111h1V20L190 1zm158 168L187 74v-1l-1 1-1-1v2L27 169V44l160-17 160 17v125zM186 94l160 93-62 37-99-59v20l82 49-12 7-70-42v20l53 32-11 7-42-25v20l26 15-25 15-158-94 158-95zM27 210l158 94v15L75 253v20l111 67v15L75 289v20l111 67h1l113-68v-72l47-28v139l-160 95-160-95V210z" />
-    </symbol>
-  </svg>
   <header class="page-header">
     <div class="page-header__logo">
       <a class="page-header__logo-link" href="index.html">
@@ -28,17 +23,17 @@
       <button class="main-menu__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="main-menu__list">
         <li class="main-menu__item">
-          <a class="main-menu__link" href="index.html">
-            <span class="main-menu__link-wrapper">Главная</span>
+          <a class="main-menu__link main-menu__link--index" href="index.html">
+            <span class="main-menu__link-wrapper main-menu__link-wrapper--current main-menu__link-wrapper--index">Главная</span>
           </a>
         </li>
         <li class="main-menu__item">
-          <a class="main-menu__link" href="catalog.html">
-            <span class="main-menu__link-wrapper main-menu__link-wrapper--current">Каталог продукции</span>
+          <a class="main-menu__link main-menu__link--index" href="catalog.html">
+            <span class="main-menu__link-wrapper">Каталог продукции</span>
           </a>
         </li>
         <li class="main-menu__item">
-          <a class="main-menu__link" href="form.html">
+          <a class="main-menu__link main-menu__link--index" href="form.html">
             <span class="main-menu__link-wrapper">Подбор программы</span>
           </a>
         </li>
@@ -269,44 +264,50 @@
     </section>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__logo">
-      <a class="page-footer__logo-link" href="index.html">
-        <img class="page-footer__logo-title" src="img/logo-footer.svg" width="128" height="24" alt="Логотип интернет-магазина Кэт энерджи">
-      </a>
-    </div>
-    <section class="page-footer__social">
-      <h2 class="visually-hidden">Мы в социальных сетях</h2>
-      <ul class="page-footer__social-list">
-        <li class="page-footer__social-item">
-          <a class="page-footer__social-link page-footer__social-link--vk" href="https://vk.com/htmlacademy">
-            <span class="visually-hidden">Наша страница в Вконтакте</span>
-            <img src="img/icon-vk-mobile.svg" width="22" height="12" alt="Наша страница в Вконтакте">
-          </a>
-        </li>
-        <li class="page-footer__social-item">
-          <a class="page-footer__social-link page-footer__social-link--instagram" href="https://www.instagram.com/htmlacademy/">
-            <span class="visually-hidden">Наша страница в Инстаграм</span>
-            <img src="img/icon-insta-mobile.svg" width="16" height="16" alt="Наша страница в Инстаграм">
-          </a>
-        </li>
-        <li class="page-footer__social-item">
-          <a class="page-footer__social-link page-footer__social-link--facebook" href="https://www.facebook.com/htmlacademy">
-            <span class="visually-hidden">Наша страничка в Фейсбук</span>
-            <img src="img/icon-fb-mobile.svg" width="10" height="19" alt="Наша страничка в Фейсбук">
-          </a>
-        </li>
-      </ul>
-    </section>
-    <div class="page-footer__htmlacademy">
-      <a class="page-footer__htmlacademy-link" href="https://htmlacademy.ru/intensive/adaptive" title="Профессиональный онлайн‑курс HTML и CSS, уровень 2">HTML Academy</a>
-      <a class="page-footer__htmlacademy-logo" href="https://htmlacademy.ru/intensive/adaptive">
-        <svg width="27" height="34">
-          <use xlink:href="#htmlacademy-logo"></use>
-        </svg>
-      </a>
-    </div>
-  </footer>
-  <script src="js/picturefill.js"></script>
-  <script src="js/script.js"></script>
-</body>
-</html>
+      <div class="page-footer__logo">
+        <a class="page-footer__logo-link" href="index.html">
+          <img class="page-footer__logo-title" src="img/logo-footer.svg" width="128" height="24" alt="Логотип интернет-магазина Кэт энерджи">
+        </a>
+      </div>
+      <section class="page-footer__social">
+        <h2 class="visually-hidden">Мы в социальных сетях</h2>
+        <ul class="page-footer__social-list">
+          <li class="page-footer__social-item">
+            <a class="page-footer__social-link page-footer__social-link--vk" href="https://vk.com/htmlacademy" aria-label="Перейти на нашу страницу в Вконтакте">
+              <span class="visually-hidden">Наша страница в Вконтакте</span>
+              <svg width="22" height="12" role="img" focusable="false">
+                <use xlink:href="img/sprite.svg#icon-vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="page-footer__social-item">
+            <a class="page-footer__social-link page-footer__social-link--instagram" href="https://www.instagram.com/htmlacademy/" aria-label="Перейти на нашу страницу в Инстаграм">
+              <span class="visually-hidden">Наша страница в Инстаграм</span>
+              <svg width="16" height="16" role="img" focusable="false">
+                <use xlink:href="img/sprite.svg#icon-insta"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="page-footer__social-item">
+            <a class="page-footer__social-link page-footer__social-link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="Перейти на нашу страницу в Фейсбук">
+              <span class="visually-hidden">Наша страничка в Фейсбук</span>
+              <svg width="10" height="19" role="img" focusable="false">
+                <use xlink:href="img/sprite.svg#icon-fb"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <div class="page-footer__htmlacademy">
+        <a class="page-footer__htmlacademy-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Профессиональный онлайн‑курс HTML и CSS, уровень 2">
+          <span class="page-footer__htmlacademy-title">HTML Academy</span>
+          <svg class="page-footer__htmlacademy-logo" width="27" height="34" role="img" focusable="false">
+            <use xlink:href="img/sprite.svg#htmlacademy"></use>
+          </svg>
+        </a>
+      </div>
+    </footer>
+    <script src="js/picturefill.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+  </html>
