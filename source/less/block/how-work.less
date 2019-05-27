@@ -1,6 +1,7 @@
 .how-work {
   width: 320px;
   margin: 0 auto;
+  margin-bottom: 46px;
   padding-right: 20px;
   padding-left: 20px;
   line-height: 18px;
@@ -76,7 +77,6 @@
   }
 }
 
-
 .how-work__description {
   margin: 0;
   font-family: @arial;
@@ -89,6 +89,7 @@
 @media (min-width: @tablet-width) {
   .how-work {
     width: @tablet-width;
+    margin-bottom: 53px;
     padding-right: 30px;
     padding-left: 30px;
   }
@@ -164,7 +165,7 @@
   }
 
   .how-work__description br {
-    display: unset;
+    display: inline;
   }
 }
 
@@ -172,12 +173,19 @@
   .how-work {
     width: 1440px;
     padding-right: 110px;
+    padding-bottom: 24px;
     padding-left: 110px;
   }
 
   .how-work__item {
-    width: 245px;
+    width: 246px;
+    margin-bottom: 0;
     padding-left: 0;
+
+    &:nth-child(1),
+    &:nth-child(2) {
+      margin-bottom: 0;
+    }
   }
 
   .how-work__description {
