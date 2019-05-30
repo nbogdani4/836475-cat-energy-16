@@ -47,51 +47,55 @@
       <form class="aplication" name="selection-program" method="post" action="https://echo.htmlacademy.ru">
         <fieldset class="aplication__fieldset aplication__fieldset--data">
           <legend class="visually-hidden">Данные кота</legend>
-          <div class="aplication__input-wrapper">
-            <p class="aplication__data-row">
-              <label class="aplication__data-label" for="cat-name">Имя:*</label>
-              <input class="aplication__data-input" name="cat-name" id="cat-name" type="text" autocomplete="off" placeholder="Барсик" required>
-            </p>
-            <p class="aplication__data-row">
-              <label class="aplication__data-label" for="cat-weight">Вес (кг):*</label>
-              <input class="aplication__data-input" name="cat-weight" id="cat-weight" autocomplete="off" type="text" placeholder="7" required>
-            </p>
-            <p class="aplication__data-row">
-              <label class="aplication__data-label" for="cat-age">Возраст (лет):</label>
-              <input class="aplication__data-input" name="cat-age" id="cat-age" autocomplete="off" type="text" placeholder="7">
-            </p>
+          <div class="aplication__simple-wrapper">
+            <div class="aplication__input-wrapper">
+              <p class="aplication__data-row aplication__data-row--cat-name">
+                <label class="aplication__data-label" for="cat-name">Имя:*</label>
+                <input class="aplication__data-input" name="cat-name" id="cat-name" type="text" autocomplete="off" placeholder="Барсик" required>
+              </p>
+              <p class="aplication__data-row aplication__data-row--cat-weight">
+                <label class="aplication__data-label" for="cat-weight">Вес (кг):*</label>
+                <input class="aplication__data-input" name="cat-weight" id="cat-weight" autocomplete="off" type="text" placeholder="7" required>
+              </p>
+              <p class="aplication__data-row aplication__data-row--cat-age">
+                <label class="aplication__data-label" for="cat-age">Возраст (лет):</label>
+                <input class="aplication__data-input" name="cat-age" id="cat-age" autocomplete="off" type="text" placeholder="7">
+              </p>
+            </div>
+            <ul class="aplication__purpose-list">
+              <li class="aplication__purpose-item">
+                <input class="visually-hidden" type="radio" name="purpose" id="weight-loss" value="weight-loss" checked>
+                <label for="weight-loss">Похудение</label>
+              </li>
+              <li class="aplication__purpose-item">
+                <input class="visually-hidden" type="radio" name="purpose" id="weight-gain" value="weight-gain">
+                <label for="weight-gain">Набор массы</label>
+              </li>
+              <li class="aplication__purpose-item">
+                <input class="visually-hidden" type="radio" name="purpose" id="dont-know" value="dont-know">
+                <label for="dont-know">Не знаю (Нужен ваш совет)</label>
+              </li>
+            </ul>
           </div>
-          <ul class="aplication__purpose-list">
-            <li class="aplication__purpose-item">
-              <input class="visually-hidden" type="radio" name="purpose" id="weight-loss" value="weight-loss" checked>
-              <label for="weight-loss">Похудение</label>
-            </li>
-            <li class="aplication__purpose-item">
-              <input class="visually-hidden" type="radio" name="purpose" id="weight-gain" value="weight-gain">
-              <label for="weight-gain">Набор массы</label>
-            </li>
-            <li class="aplication__purpose-item">
-              <input class="visually-hidden" type="radio" name="purpose" id="dont-know" value="dont-know">
-              <label for="dont-know">Не знаю (Нужен ваш совет)</label>
-            </li>
-          </ul>
         </fieldset>
         <fieldset class="aplication__fieldset aplication__fieldset--contacts">
           <legend class="aplication__legend-title aplication__legend-title--contacts">Контактные данные (владельца кота)</legend>
-          <p class="aplication__contacts-row">
-            <label for="owner-mail">E-mail:*</label>
-            <input type="email" name="owner-mail" id="owner-mail" placeholder="kuklachev@gmail.com" autocomplete="off" required>
-            <svg class="aplication__contacts-icon aplication__contacts-icon--mail" width="17" height="13" role="img" focusable="false">
-              <use xlink:href="img/sprite.svg#sprite-mail"></use>
-            </svg>
-          </p>
-          <p class="aplication__contacts-row">
-            <label for="owner-phone">Телефон:*</label>
-            <input type="tel" name="owner-phone" id="owner-phone" placeholder="8 (960) 900-60-90" autocomplete="off" required>
-            <svg class="aplication__contacts-icon aplication__contacts-icon--phone" width="20" height="20" role="img" focusable="false">
-              <use xlink:href="img/sprite.svg#sprite-phone"></use>
-            </svg>
-          </p>
+          <div class="aplication__simple-wrapper">
+            <p class="aplication__contacts-row aplication__contacts-row--mail">
+              <label for="owner-mail">E-mail:*</label>
+              <input type="email" name="owner-mail" id="owner-mail" placeholder="kuklachev@gmail.com" autocomplete="off" required>
+              <svg class="aplication__contacts-icon aplication__contacts-icon--mail" width="17" height="13" role="img" focusable="false">
+                <use xlink:href="img/sprite.svg#sprite-mail"></use>
+              </svg>
+            </p>
+            <p class="aplication__contacts-row aplication__contacts-row--phone">
+              <label for="owner-phone">Телефон:*</label>
+              <input type="tel" name="owner-phone" id="owner-phone" placeholder="8 (960) 900-60-90" autocomplete="off" required>
+              <svg class="aplication__contacts-icon aplication__contacts-icon--phone" width="20" height="20" role="img" focusable="false">
+                <use xlink:href="img/sprite.svg#sprite-phone"></use>
+              </svg>
+            </p>
+          </div>
         </fieldset>
         <fieldset class="aplication__fieldset aplication__fieldset--comments">
           <legend class="aplication__legend-title aplication__legend-title--comments">Комментарий</legend>
@@ -138,7 +142,7 @@
     </div>
   </main>
   <footer class="page-footer">
-    <section class="our-address">
+    <section class="our-address our-address--catalog-page">
       <h2 class="visually-hidden">Адрес нашего магазина</h2>
       <p class="our-address__invite-cooperation">Приглашаем<br> к сотрудничеству дилеров!</p>
       <p class="our-address__adress">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>

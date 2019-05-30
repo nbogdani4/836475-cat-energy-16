@@ -141,6 +141,9 @@
   opacity: 0.3;
 }
 
+.aplication__purpose-item input:focus + label::before {
+  outline: 5px auto -webkit-focus-ring-color;
+}
 
 .aplication__fieldset--contacts {
   padding-bottom: 29px;
@@ -302,6 +305,10 @@
   opacity: 0.3;
 }
 
+.aplication__additionally-item input:focus ~ label::before {
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
 .aplication__submit {
   padding-bottom: 32px;
 }
@@ -314,4 +321,224 @@
   text-align: center;
   color: #444444;
   text-transform: none;
+}
+
+@media (min-width: @tablet-width) {
+  .aplication {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .aplication__fieldset--data {
+    margin-bottom: 46px;
+  }
+
+  .aplication__input-wrapper {
+    padding-bottom: 72px;
+  }
+
+  .aplication__data-row {
+    padding-bottom: 20px;
+  }
+
+  .aplication__data-row label {
+    padding-right: 19px;
+  }
+
+  .aplication__data-row input {
+    padding: 10px 18px;
+  }
+
+  .aplication__purpose-list {
+    margin-right: 0;
+    margin-left: 0;
+    padding: 34px 42px 34px;
+  }
+
+  .aplication__purpose-item {
+    padding-bottom: 33px;
+  }
+
+  .aplication__purpose-item label::before {
+    top: -5px;
+    left: -59px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .aplication__purpose-item input:checked + label::after {
+    top: 6px;
+    left: -48px;
+    width: 18px;
+    height: 18px;
+  }
+
+  .aplication__fieldset--contacts {
+    padding-bottom: 65px;
+  }
+
+  .aplication__legend-title {
+    margin-left: -40px;
+    padding-right: 40px;
+    padding-left: 40px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .aplication__legend-title::before {
+    left: -30px;
+    width: 768px;
+    margin-top: 22px;
+  }
+
+  .aplication__legend-title--contacts {
+    margin-right: 0;
+    padding-bottom: 76px;
+  }
+
+  .aplication__contacts-row {
+    padding-bottom: 20px;
+  }
+
+  .aplication__contacts-row input {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .aplication__contacts-row label {
+    padding-right: 17px;
+  }
+
+  .aplication__contacts-row--mail input {
+    padding-left: 23px;
+  }
+
+  .aplication__contacts-row--phone input {
+    padding-left: 16px;
+  }
+
+  .aplication__fieldset--comments {
+    padding-bottom: 64px;
+  }
+
+  .aplication__fieldset--comments textarea {
+    width: 631px;
+    height: 174px;
+    padding-top: 15px;
+    padding-left: 18px;
+  }
+
+  .aplication__legend-title--comments {
+    padding-bottom: 40px;
+  }
+
+  .aplication__legend-title--additionally {
+    padding-bottom: 66px;
+  }
+
+  .aplication__fieldset--additionally {
+    padding-bottom: 13px;
+  }
+
+  .aplication__additionally-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .aplication__additionally-item {
+    width: 284px;
+    padding-bottom: 52px;
+    padding-left: 58px;
+  }
+
+  .aplication__additionally-item label::before {
+    top: -4px;
+    left: -58px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .aplication__additionally-icon {
+    top: 3px;
+    left: 10px;
+  }
+
+  .aplication__submit {
+    display: flex;
+    align-items: center;
+    padding-bottom: 72px;
+  }
+
+  .aplication__notice {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .aplication__simple-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .aplication__input-wrapper {
+    width: 570px;
+    padding-bottom: 0;
+  }
+
+  .aplication__purpose-list {
+    padding-right: 252px;
+  }
+
+  .aplication__fieldset--data {
+    margin-bottom: 40px;
+  }
+
+  .aplication__contacts-row--mail input {
+    width: 488px;
+  }
+
+  .aplication__contacts-row--phone {
+    margin-bottom: 20px;
+  }
+
+  .aplication__contacts-row--phone input {
+    width: 472px;
+    padding-right: 50px;
+  }
+
+  .aplication__contacts-icon--phone {
+    right: 19px;
+  }
+
+  .aplication__fieldset--contacts {
+    padding-bottom: 47px;
+  }
+
+  .aplication__fieldset--comments textarea {
+    width: 1220px;
+  }
+
+  .aplication__fieldset--comments {
+    padding-bottom: 66px;
+  }
+
+  .aplication__legend-title::before {
+    left: -70px;
+    width: 1440px;
+  }
+
+  .aplication__additionally-item {
+    width: 245px;
+  }
+
+  .aplication__fieldset--additionally {
+    padding-bottom: 20px;
+  }
+
+  .aplication__submit {
+    padding-bottom: 83px;
+  }
 }
