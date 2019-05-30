@@ -40,27 +40,102 @@
       </ul>
     </nav>
   </header>
-  <main class="page-main">
-
-    <section class="how-work">
-      <h2 class="how-work__title">Как это работает</h2>
-      <ul class="how-work__list">
-        <li class="how-work__item how-work__item--nutrients">
-          <p class="how-work__description">Функциональное питание содержит только полезные питательные вещества.</p>
-        </li>
-        <li class="how-work__item how-work__item--powder">
-          <p class="how-work__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
-        </li>
-        <li class="how-work__item how-work__item--food">
-          <p class="how-work__description">Замените один-два приема обычной еды на наше функциональное питание.</p>
-        </li>
-        <li class="how-work__item how-work__item--period">
-          <p class="how-work__description">Уже через месяц наслаждайтесь изменениями к лучшему<br> вашего питомца!</p>
-        </li>
-      </ul>
-    </section>
-
-
+  <main class="main main--form">
+    <div class="container container--form">
+      <h1 class="main__title main__title--form">Подбор программы</h1>
+      <p class="main__description main__description--form">Заполните анкету и мы подберем программу питания для вашего кота</p>
+      <form class="aplication" name="selection-program" method="post" action="https://echo.htmlacademy.ru">
+        <fieldset class="aplication__fieldset aplication__fieldset--data">
+          <legend class="visually-hidden">Данные кота</legend>
+          <div class="aplication__input-wrapper">
+            <p class="aplication__data-row">
+              <label class="aplication__data-label" for="cat-name">Имя:*</label>
+              <input class="aplication__data-input" name="cat-name" id="cat-name" type="text" autocomplete="off" placeholder="Барсик" required>
+            </p>
+            <p class="aplication__data-row">
+              <label class="aplication__data-label" for="cat-weight">Вес (кг):*</label>
+              <input class="aplication__data-input" name="cat-weight" id="cat-weight" autocomplete="off" type="text" placeholder="7" required>
+            </p>
+            <p class="aplication__data-row">
+              <label class="aplication__data-label" for="cat-age">Возраст (лет):</label>
+              <input class="aplication__data-input" name="cat-age" id="cat-age" autocomplete="off" type="text" placeholder="7">
+            </p>
+          </div>
+          <ul class="aplication__purpose-list">
+            <li class="aplication__purpose-item">
+              <input class="visually-hidden" type="radio" name="purpose" id="weight-loss" value="weight-loss" checked>
+              <label for="weight-loss">Похудение</label>
+            </li>
+            <li class="aplication__purpose-item">
+              <input class="visually-hidden" type="radio" name="purpose" id="weight-gain" value="weight-gain">
+              <label for="weight-gain">Набор массы</label>
+            </li>
+            <li class="aplication__purpose-item">
+              <input class="visually-hidden" type="radio" name="purpose" id="dont-know" value="dont-know">
+              <label for="dont-know">Не знаю (Нужен ваш совет)</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="aplication__fieldset aplication__fieldset--contacts">
+          <legend class="aplication__legend-title aplication__legend-title--contacts">Контактные данные (владельца кота)</legend>
+          <p class="aplication__contacts-row">
+            <label for="owner-mail">E-mail:*</label>
+            <input type="email" name="owner-mail" id="owner-mail" placeholder="kuklachev@gmail.com" autocomplete="off" required>
+            <svg class="aplication__contacts-icon aplication__contacts-icon--mail" width="17" height="13" role="img" focusable="false">
+              <use xlink:href="img/sprite.svg#sprite-mail"></use>
+            </svg>
+          </p>
+          <p class="aplication__contacts-row">
+            <label for="owner-phone">Телефон:*</label>
+            <input type="tel" name="owner-phone" id="owner-phone" placeholder="8 (960) 900-60-90" autocomplete="off" required>
+            <svg class="aplication__contacts-icon aplication__contacts-icon--phone" width="20" height="20" role="img" focusable="false">
+              <use xlink:href="img/sprite.svg#sprite-phone"></use>
+            </svg>
+          </p>
+        </fieldset>
+        <fieldset class="aplication__fieldset aplication__fieldset--comments">
+          <legend class="aplication__legend-title aplication__legend-title--comments">Комментарий</legend>
+          <textarea name="comments" cols="40" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
+        </fieldset>
+        <fieldset class="aplication__fieldset aplication__fieldset--additionally">
+          <legend class="aplication__legend-title aplication__legend-title--additionally">Дополнительно</legend>
+          <ul class="aplication__additionally-list">
+            <li class="aplication__additionally-item">
+              <input class="visually-hidden" type="checkbox" name="substitute" id="substitute" checked>
+              <svg class="aplication__additionally-icon" width="21" height="16" role="presentation" focusable="false">
+                <use xlink:href="img/sprite.svg#sprite-tick"></use>
+              </svg>
+              <label for="substitute">Сахарозаменитель</label>
+            </li>
+            <li class="aplication__additionally-item">
+              <input class="visually-hidden" type="checkbox" name="water" id="water">
+              <svg class="aplication__additionally-icon" width="21" height="16" role="presentation" focusable="false">
+                <use xlink:href="img/sprite.svg#sprite-tick"></use>
+              </svg>
+              <label for="water">Питьевая вода</label>
+            </li>
+            <li class="aplication__additionally-item">
+              <input class="visually-hidden" type="checkbox" name="milk" id="milk">
+              <svg class="aplication__additionally-icon" width="21" height="16" role="presentation" focusable="false">
+                <use xlink:href="img/sprite.svg#sprite-tick"></use>
+              </svg>
+              <label for="milk">Молоко</label>
+            </li>
+            <li class="aplication__additionally-item">
+              <input class="visually-hidden" type="checkbox" name="vitamin" id="vitamin">
+              <svg class="aplication__additionally-icon" width="21" height="16" role="presentation" focusable="false">
+                <use xlink:href="img/sprite.svg#sprite-tick"></use>
+              </svg>
+              <label for="vitamin">Витамины</label>
+            </li>
+          </ul>
+        </fieldset>
+        <div class="aplication__submit">
+          <button class="button button--form-submit" type="submit">Отправить заявку</button>
+          <p class="aplication__notice">* — Обязательные поля</p>
+        </div>
+      </form>
+    </div>
   </main>
   <footer class="page-footer">
     <section class="our-address">

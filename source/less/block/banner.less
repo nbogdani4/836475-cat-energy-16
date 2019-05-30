@@ -1,0 +1,96 @@
+.banner {
+  // width: 320px;
+  // margin: 0 auto;
+  // padding-right: 20px;
+  // padding-left: 20px;
+  padding-bottom: 35px;
+}
+
+.banner__container {
+  position: relative;
+  width: 280px;
+  min-height: 289px;
+  padding-top: 187px;
+  padding-right: 55px;
+  padding-left: 55px;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: @arial;
+  text-align: center;
+  color: #ffffff;
+  background-color: #68b738;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+    background-size: 280px auto;
+  }
+}
+
+.banner__promotion {
+  margin: 0;
+}
+
+.banner svg {
+  position: absolute;
+  top: 65px;
+  left: 113px;
+  width: 55px;
+  height: 60px;
+
+  fill: #ffffff;
+}
+
+@media (min-width: @tablet-width) {
+  .banner {
+    // width: @tablet-width;
+    // padding-right: 30px;
+    // padding-left: 30px;
+    padding-bottom: 76px;
+  }
+
+  .banner__container {
+    width: 708px;
+    min-height: 200px;
+    padding-top: 72px;
+    padding-right: 115px;
+    padding-left: 423px;
+    text-align: left;
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+      background-size: 708px auto;
+    }
+  }
+
+  .banner svg {
+    left: 91px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .banner {
+    margin: 0;
+    // width: 245px;
+    padding: 0;
+  }
+
+  .banner__container {
+    width: 245px;
+    padding: 0;
+    // min-height: 200px;
+    // padding-top: 72px;
+    // padding-right: 115px;
+    // padding-left: 423px;
+    // text-align: left;
+    // background-image: url("../img/gift-photo-tablet@1x.jpg");
+
+    // @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    //   background-image: url("../img/gift-photo-tablet@2x.jpg");
+    //   background-size: 708px auto;
+    // }
+  }
+}
